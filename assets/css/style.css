@@ -803,6 +803,10 @@ color:gray;
   color:rgb(164,70,153);
 }
 
+#royal {
+  color:rgb(180,140,20);
+}
+
 .chromeBingoLetterFix {
   transform:translateX(-50%) translateZ(0);
 }
@@ -915,4 +919,96 @@ color:gray;
   height:100%;
   display:grid;
   grid-template-columns: 1fr 1fr;
+}
+
+/* ===== Royal Theme ===== */
+
+@keyframes royalShimmer {
+  0%   { box-shadow: 0 0 6px 2px rgba(212,175,55,0.8),  0 0 14px 5px rgba(120,0,160,0.3); }
+  50%  { box-shadow: 0 0 10px 4px rgba(240,210,80,1),   0 0 20px 8px rgba(80,0,120,0.5); }
+  100% { box-shadow: 0 0 6px 2px rgba(212,175,55,0.8),  0 0 14px 5px rgba(120,0,160,0.3); }
+}
+
+/* Royal BINGO letters: gold with glow */
+.royalTheme .bingoLetter {
+  color: #c9a227;
+  text-shadow: 0 2px 8px rgba(120,0,160,0.4), 0 0 2px rgba(212,175,55,0.6);
+}
+
+.royalTheme .bingoLetter:hover {
+  color: #e5c040;
+}
+
+.royalTheme .bingoLetterGray {
+  color: #969696;
+  text-shadow: none;
+}
+
+.royalTheme .bingoLetterGray:hover {
+  color: #808080;
+}
+
+/* B column: gold/amber */
+.royalTheme .bingoBallBallActiveB {
+  border-color: rgb(212,175,55);
+  color: #6b4a00;
+  background: radial-gradient(circle at 31.5px 12px, rgba(255,230,120,0.9), rgba(212,175,55,0.9));
+  animation: royalShimmer 2s ease-in-out infinite;
+}
+
+.royalTheme .bingoBallBallActiveB:hover {
+  opacity: 0.8;
+  animation: royalShimmer 2s ease-in-out infinite;
+}
+
+/* I column: royal purple */
+.royalTheme .bingoBallBallActiveI {
+  border-color: rgb(76,0,153);
+  color: #2a0056;
+  background: radial-gradient(circle at 31.5px 12px, rgba(180,120,255,0.9), rgba(100,20,200,0.9));
+  animation: royalShimmer 2s ease-in-out infinite;
+}
+
+.royalTheme .bingoBallBallActiveI:hover {
+  opacity: 0.8;
+  animation: royalShimmer 2s ease-in-out infinite;
+}
+
+/* N column: deep crimson */
+.royalTheme .bingoBallBallActiveN {
+  border-color: rgb(160,20,60);
+  color: #5a0020;
+  background: radial-gradient(circle at 31.5px 12px, rgba(230,100,140,0.9), rgba(180,30,70,0.9));
+  animation: royalShimmer 2s ease-in-out infinite;
+}
+
+.royalTheme .bingoBallBallActiveN:hover {
+  opacity: 0.8;
+  animation: royalShimmer 2s ease-in-out infinite;
+}
+
+/* G column: royal blue */
+.royalTheme .bingoBallBallActiveG {
+  border-color: rgb(30,50,180);
+  color: #0a1560;
+  background: radial-gradient(circle at 31.5px 12px, rgba(110,140,255,0.9), rgba(40,70,210,0.9));
+  animation: royalShimmer 2s ease-in-out infinite;
+}
+
+.royalTheme .bingoBallBallActiveG:hover {
+  opacity: 0.8;
+  animation: royalShimmer 2s ease-in-out infinite;
+}
+
+/* O column: deep emerald */
+.royalTheme .bingoBallBallActiveO {
+  border-color: rgb(0,110,55);
+  color: #003d1f;
+  background: radial-gradient(circle at 31.5px 12px, rgba(80,200,130,0.9), rgba(0,140,70,0.9));
+  animation: royalShimmer 2s ease-in-out infinite;
+}
+
+.royalTheme .bingoBallBallActiveO:hover {
+  opacity: 0.8;
+  animation: royalShimmer 2s ease-in-out infinite;
 }
