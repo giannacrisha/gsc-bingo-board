@@ -61,7 +61,7 @@ body {
   justify-content:center;
   height:100%;
   width:100%;
-  font-family:"open sans";
+  font-family:"Inter Tight", sans-serif;
   overflow:hidden;
   position:fixed;
 }
@@ -102,8 +102,8 @@ body {
 #title {
   position:relative;
   font-size:135px;
-  font-family:"Fleur De Leah", cursive;
-  font-weight:400;
+  font-family:"Inter Tight", sans-serif;
+  font-weight:700;
   color:#c9a227;
   text-align:center;
   line-height:1.2;
@@ -113,13 +113,19 @@ body {
 #subheading {
   line-height:1.2;
   font-size:66px;
-  font-family:"Fleur De Leah", cursive;
+  font-family:"Luxurious Script", cursive;
   font-weight:400;
   font-style:normal;
   color:#6b2d9e;
   text-align:center;
   margin-bottom:1.3em;
   text-shadow: 0 2px 6px rgba(201,162,39,0.4);
+}
+
+h2, h3 {
+  font-family:"Luxurious Script", cursive;
+  font-weight:400;
+  color:#c9a227;
 }
 
 #titleSelection {
@@ -263,7 +269,7 @@ h2 {
 
 .helpNavText:hover, .creditsNavText:hover {
   cursor:pointer;
-  color:#16639a;
+  color:#c9a227;
 }
 
 .boldHelp {
@@ -276,7 +282,7 @@ h2 {
 
 .helpLine {
   grid-area: helpLine;
-  border-top:2px solid #948a54;
+  border-top:2px solid #c9a227;
   width:1100px;
   margin:0 auto;
 }
@@ -297,18 +303,18 @@ h2 {
 .helpFooterLabel {
   display:inline-block;
   cursor:pointer;
-  color:#376092;
+  color:#c9a227;
   transition:color 0.15s;
   margin:0.5em 0;
 }
 
 .helpFooterLabel:hover {
-  color:#4297b7;
+  color:#e5c040;
 }
 
 .helpPointer {
   position:absolute;
-  background-color: #4b63dc;
+  background-color: #4a1a6b;
   height:3px;
   box-shadow:1px 1px 2.5px rgba(0,0,0,0.6);
   border-radius:0 3px 3px 0;
@@ -317,11 +323,11 @@ h2 {
 .textLink {
   text-decoration:underline;
   cursor:pointer;
-  color:blue;
+  color:#c9a227;
 }
 
 .textLink:active {
-  color:red;
+  color:#a0143c;
 }
 
 #howToUse, #goToMasterBoard {
@@ -339,7 +345,7 @@ h2 {
   text-align:center;
   margin-top:-39px;
   font-size:13.5px;
-  font-family:arial;
+  font-family:"Inter Tight", sans-serif;
 }
 
 #copyrightLabel {
@@ -459,9 +465,9 @@ margin:0.5em 0;
 }
 
 .bingoLetter {
-  font-family:arya;
+  font-family:"Inter Tight", sans-serif;
   font-weight:700;
-  color:#ce181e;
+  color:#c9a227;
   font-size:110px;
   text-align:center;
   line-height:0.8;
@@ -475,7 +481,7 @@ margin:0.5em 0;
 
 .bingoLetter:hover {
   cursor:pointer;
-  color:#e24e53;
+  color:#e5c040;
 }
 
 .bingoLetterGray {
@@ -512,26 +518,26 @@ margin:0.5em 0;
 }
 
 #hideBoard {
-  background-color:rgba(75,172,198,0.3);
-  border: 1px solid rgba(49,133,156,0.65);
+  background-color:rgba(201,162,39,0.3);
+  border: 1px solid rgba(201,162,39,0.65);
 }
 
 #hideBoard:hover {
-  background-color:rgba(75,172,198,0.5);
+  background-color:rgba(201,162,39,0.5);
 }
 
 #showBoard {
-  background-color:rgba(192,80,77,0.3);
-  border: 1px solid rgba(192,80,77,0.65);
+  background-color:rgba(160,20,60,0.3);
+  border: 1px solid rgba(160,20,60,0.65);
 }
 
 #showBoard:hover {
-  background-color:rgba(192,80,77,0.5);
+  background-color:rgba(160,20,60,0.5);
 }
 
 .smallButton {
   font-size:13px;
-  font-family:arial,sans-serif;
+  font-family:"Inter Tight", sans-serif;
   cursor:pointer;
   padding: 3px 6px;
   border-radius:6px;
@@ -540,11 +546,11 @@ margin:0.5em 0;
 }
 
 #reset:hover {
-  background-color:rgba(255,0,0,0.25);
+  background-color:rgba(160,20,60,0.25);
 }
 
 #reset:active {
-  background-color:rgba(255,0,0,0.5);
+  background-color:rgba(160,20,60,0.5);
 }
 
 #themes:hover {
@@ -597,8 +603,8 @@ margin:0.5em 0;
   width:193px;
   height:44px;
   font-size:25px;
-  background:rgba(179,162,199,0.67);
-  border:1.2px solid rgba(74,126,187,0.85);
+  background:rgba(74,26,107,0.35);
+  border:1.2px solid rgba(201,162,39,0.85);
   border-radius:12px;
   margin:9px auto 0 auto;
   display:flex;
@@ -860,13 +866,13 @@ color:gray;
 }
 
 .bingoCardHeader {
-  background:#e1cdac;
+  background:#2a0a4a;
   border:1px solid #7f7f7f;
   text-align:center;
   font-size:80%;
   line-height:0.6;
-  font-family:arya;
-  color:#ce181e;
+  font-family:"Inter Tight", sans-serif;
+  color:#c9a227;
   font-weight:700;
   display:flex;
   align-items:center;
@@ -903,7 +909,7 @@ color:gray;
 
 .winningName:hover {
   cursor:pointer;
-  color:#16639a;
+  color:#c9a227;
 }
 
 .bigBingoCardBody:hover {
@@ -912,11 +918,11 @@ color:gray;
 }
 
 .bingoCardActive, .bingoCardActive2 {
-  background-color:#e83b29;
+  background-color:#a0143c;
 }
 
 .bingoCardActive:hover {
-  background-color:#f14b3a;
+  background-color:#c01a4a;
 }
 
 .twoSections {
